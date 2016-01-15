@@ -33,7 +33,6 @@ body {
   padding-top: 68px;
   position: relative;
 }
-
 a {
   color: #9b1a1e;
   -webkit-transition: all .25s ease-in-out;
@@ -349,7 +348,6 @@ p {
 /************************************************************************
 // =Navbar
 *************************************************************************/
-
 .navbar-default {
   background: #fff;
   border: none;
@@ -359,12 +357,20 @@ p {
   top: 0;
   border-bottom: 2px solid #f0f0f0;
 }
+.navbar-default {
+  background: #fff;
+  display: block;
+  border: none;
+  width: 100%;
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+}
 .navbar.active {
   position: fixed;
   opacity: 0.95;
   border: 1px solid #E8E8E8;
 }
-
 .navbar-nav {
   margin: 8px -10px;
 }
@@ -381,14 +387,13 @@ p {
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav >
 .active > a:focus {
-  background: transparent;
+  background: #fff;
   color: #9b1a1e;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #9b1a1e;
 }
-
 .dropdown-menu {
   top: 117%;
   font-size: 12px;
@@ -435,7 +440,7 @@ p {
   content: '';
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 100%;
   z-index: 1;
