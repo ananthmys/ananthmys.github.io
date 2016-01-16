@@ -788,11 +788,14 @@ ul.choose-list li, ul.soon-list li {
 /***********************************************************************************************/
 
 #projects-section {
-  padding: 50px 0 40px 0!important;
+  padding: 25px 0 25px 0!important;
 }
 
 #projects-section .title-section {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+}
+#projects-section .title-section .firstTitle {
+  padding-top: 40px;
 }
 
 #type-masory {
@@ -924,10 +927,17 @@ a:hover .overlay {
 /***********************************************************************************************/
 
 .clients-bg {
-  background: url('../images/clients/clients-bg.jpg') center top no-repeat;
+  /*background: url('../images/media.jpg') center top no-repeat;
   position: relative;
-  background-size: cover;
-  padding: 30px 0;
+  background-size: cover;*/
+  /*padding: 30px 0;*/
+}
+.media {
+  min-height: 200px;
+  z-index: 100;
+  background: url('../images/media.jpg');
+  background-position:center;
+  background-size:cover;
 }
 
 .clients-bg:before {
