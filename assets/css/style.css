@@ -1,27 +1,3 @@
-/*STYLE.CSS*/
-
-/*This is main CSS file that contains custom style rules used in this template*/
-
-/***********************************************************************************************
-
-    Project Name: Visia
-    Project Description: Multipurpose One/Multi Page Template
-    File Name: style.css
-    Author: ClasDesign
-    Author URI: http://www.clas-design.com
-    Build Date: 15-10-2015
-    Version: 1.0 Initial Release
-    Copyright: (C) 2015
-
-/***********************************************************************************************/
-
-
-
-
-
-/***********************************************************************************************/
-/* =Common Styles */
-/***********************************************************************************************/
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -145,7 +121,7 @@ p {
   font-size: 15px;
   line-height: 26px;
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 .pad-sec {
@@ -554,7 +530,7 @@ p.hero {
   font-size: 25px;
   line-height: 32px;
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .hero-btn {
@@ -1739,8 +1715,13 @@ ul.details-list li:last-child {
 }
 
 .landing-hero {
-  background: url('../images/hero-bg/landing.jpg');
+  background: url('');
   background-size: cover;
+}
+.CycleTours {
+  background:url('../images/hero-bg/cycle.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 
 /*--------------------
@@ -1923,7 +1904,9 @@ ul.features-list li {
 #screenshots-section .title-section {
   padding-bottom: 80px;
 }
-
+#screenshots-section {
+  position:relative;
+}
 .screenshots-carousel .shot {
   padding: 4px;
 }
@@ -2517,7 +2500,12 @@ label {
 }
 
 #features-app-section-1, #features-app-section-2 {
-  padding: 120px 0;
+  padding: 10px 0;
+  text-align: left
+}
+#features-app-section-1 i {
+  font-size: 14px;
+  padding:0.1em 0.5em;
 }
 
 .features-app-content-right {
@@ -2542,7 +2530,7 @@ ul.features-app-list {
 }
 
 ul.features-app-list li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #feature-app-section-2 ul.features-app-list li {
@@ -2850,16 +2838,33 @@ ul.download li a img {
   display: inline-block;
 }
 
-/***********************************************************************************************/
-/* =Footer */
-/***********************************************************************************************/
-
 #footer-section {
-  padding: 80px 0;
-  background: #F7F7F7;
+  padding: 60px 0;
+  background: #2b2d2e;
   border-top: 1px solid #EEEEEE;
 }
-
+.Footermenu ul {
+  list-style: none;
+  text-align: left;
+}
+.Footermenu ul li {
+  padding:0.75em;
+}
+.Footermenu ul li a {
+  color:#FFF;
+  font-size: 16px;
+}
+#contact ul {
+  list-style: none;
+  text-align: center;
+}
+#contact ul li  {
+  padding:0.5em 0em;
+}
+#contact li a {
+  color:#fff;
+  font-size: 18px;
+}
 ul.footer-social-links {
   list-style-type: none;
   padding: 0;
@@ -2867,7 +2872,7 @@ ul.footer-social-links {
 
 ul.footer-social-links li {
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 ul.footer-social-links li:first-child {
@@ -2911,7 +2916,7 @@ ul.footer-social-links li a:hover:after {
 }
 
 p.copyright {
-  padding-top: 40px;
+  /*padding-top: 10px;*/
 }
 
 /***********************************************************************************************/
@@ -3163,4 +3168,57 @@ p.copyright {
 }
 .black {
  color: #000000;
+}
+#fixed-button {
+    position: fixed;
+    right: 10vw;
+    top: 88vh;
+    z-index:200;
+}
+#fixed-button {
+   border: 1px solid #2b2d2e;
+   background: #2b2d2e;
+   background: -webkit-gradient(linear, left top, left bottom, from(#2b2d2e), to(#2b2d2e));
+   background: -webkit-linear-gradient(top, #2b2d2e, #2b2d2e);
+   background: -moz-linear-gradient(top, #2b2d2e, #2b2d2e);
+   background: -ms-linear-gradient(top, #2b2d2e, #2b2d2e);
+   background: -o-linear-gradient(top, #2b2d2e, #2b2d2e);
+   padding: 20px 60px;
+   border-radius: 0px;
+   color: white;
+   font-size: 24px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#fixed-button:hover {
+   border-top-color: #2b2d2e;
+   background: #2b2d2e;
+   color: #ffffff;
+   }
+#fixed-button:active {
+   border-top-color: #2b2d2e;
+   background: #2b2d2e;
+}
+.TourDesc {
+  padding:1em 0em;
+}  
+.TourDetails_right {
+  display: inline-block;
+  width:75%;
+  text-align: left;
+}
+.TourDetails_left {
+  display: inline-block;
+  font-weight: bold;
+  width:15%;
+  vertical-align: middle;
+  text-align: right;
+
+}
+.highlightImages {
+  margin-left: 20%;
+}
+.hide {
+  display: none;
 }
