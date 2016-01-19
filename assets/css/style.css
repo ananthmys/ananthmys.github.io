@@ -1942,9 +1942,35 @@ ul.features-list li {
 }
 #screenshots-section {
   position:relative;
+  display: block;
+}
+#bookTA {
+  margin-top:8% !important;
+  float: right;
+  width: 100%;
+  position: absolute;
+}
+#sticky,
+#sticky-phantom {
+    /*background: transparent;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;*/
+    /*width: 100vw;*/
+}
+
+#sticky-phantom {
+    display: none;
+}
+
+#sticky.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .screenshots-carousel .shot {
   padding: 4px;
+
 }
 
 .screenshots-carousel .shot a.zoom {
@@ -3205,21 +3231,29 @@ p.copyright {
 .black {
  color: #000000;
 }
-#fixed-button {
-    position: fixed;
-    right: 10vw;
-    top: 88vh;
-    z-index:200;
+
+.fixed-button {
+    position: relative;
+    /*right: 10vw;*/
+    /*top: -10vh;*/
+    z-index:2000;
+}
+.TA_selfserveprop {
+  position: relative;
+  width:400px;
+}
+#CDSWIDSSP {
+  width:80% !important;
 }
 #fixed-button {
    border: 1px solid #2b2d2e;
-   background: #2b2d2e;
-   background: -webkit-gradient(linear, left top, left bottom, from(#2b2d2e), to(#2b2d2e));
+   background: #753c26;
+   /*background: -webkit-gradient(linear, left top, left bottom, from(#2b2d2e), to(#2b2d2e));
    background: -webkit-linear-gradient(top, #2b2d2e, #2b2d2e);
    background: -moz-linear-gradient(top, #2b2d2e, #2b2d2e);
    background: -ms-linear-gradient(top, #2b2d2e, #2b2d2e);
-   background: -o-linear-gradient(top, #2b2d2e, #2b2d2e);
-   padding: 20px 60px;
+   background: -o-linear-gradient(top, #2b2d2e, #2b2d2e);*/
+   padding: 1em 4.22em;
    border-radius: 0px;
    color: white;
    font-size: 24px;

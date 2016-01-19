@@ -92,15 +92,7 @@
   </header>
   <!-- End Navbar -->
 
- <!--  <div id="wrapper">
-  <button id="fixed-button">Book Now</button>
-  <div id="TA_selfserveprop319" class="TA_selfserveprop">
-<ul id="DvvoJTPRCQ" class="TA_links 9HxAD1mUzLEy">
-<li id="u5xJy6UJSLg" class="T26Cw7">
-<a target="_blank" href="https://www.tripadvisor.in/"><img src="https://www.tripadvisor.in/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
-</li>
-</ul>
-</div> -->
+  <div id="wrapper">
   <!-- Hero
   ================================================== -->
     <section>
@@ -131,11 +123,14 @@
           </div> <!-- End container -->
         </div> <!-- End hero-content -->
       </div> <!-- End hero-section -->
+
     </section>
     <!-- End hero section -->
     <!-- Screenshots
     ================================================== -->
       <section>
+       <div id="content-anchor"></div>
+      
         <div id="screenshots-section">
           <div class="container">
            <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
@@ -143,6 +138,7 @@
 
             <div class="row">
               <div class="col-md-8">
+                <div class="row">
                 <div class="screenshots-carousel animated out" data-animation="fadeInUp" data-delay="0">
 
                   <div class="shot">
@@ -169,14 +165,30 @@
                     </div> <!-- end screen -->
                   </div> <!-- end shot -->
                 </div> <!-- end screenshots-carousel -->
-              </div> <!-- end col-md-8 -->
-            </div> <!-- end row -->
-            <div class="row TourDesc">
-              <div class="col-md-6">
+                </div>
+                <div class="TourDesc row">
                 <p>Saddle up, as we head out on a early morning tour when the city is waking up to life and the streets are still devoid of traffic. Get a peek into the different communities and have some chai with the locals. Take in the city at your own pace as we ride past some lovely colonial structures and get to know the stories behind them. To make up for the calories lost we end with a sumptuous South Indian breakfast and a good cuppa filter coffee on the tour</p>
+                </div>
+              </div> <!-- end col-md-8 -->
+              <div class="col-md-4">
+              <div id="sticky-phantom"></div>
+                <div id="sticky">
+                <div id="bookTA">
+                <button id="fixed-button">Book Now</button>
+                <div id="TA_selfserveprop319" class="hidden-sm hidden-xs TA_selfserveprop">
+                  <ul id="DvvoJTPRCQ" class="TA_links 9HxAD1mUzLEy">
+                  <li id="u5xJy6UJSLg" class="T26Cw7">
+                  <a target="_blank" href="https://www.tripadvisor.in/"><img src="https://www.tripadvisor.in/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+                  </li>
+                  </ul>
+                </div>
+                </div>
               </div>
-            </div>
+            </div> <!-- end row -->
+
+            
           </div><!--  end container -->
+        </div>
         </div>
       </section>
       <!-- End screenshots-section -->
@@ -475,6 +487,31 @@ $(".show_hide").show();
 $('.show_hide').click(function(){
 $(".slidingDiv").slideToggle();
 });
+
+function sticky_relocate() {
+      var window_top = $(window).scrollTop();
+      var div_top = $('#content-anchor').offset().top;
+      if (window_top > div_top) {
+          
+        $('#sticky').addClass('stick');
+          
+        // Get the height of #sticky
+        // outerHeight() gets height including padding and borders
+        var phantomHeight = $('#sticky').outerHeight();
+          
+        // Set the height of $sticky-phantom
+        $('#sticky-phantom').height(phantomHeight).show();
+          
+      } else {
+        $('#sticky').removeClass('stick');
+        $('#sticky-phantom').hide();
+      }
+    }
+
+    $(function () {
+      $(window).scroll(sticky_relocate);
+      sticky_relocate();
+    });
 
 });
 
