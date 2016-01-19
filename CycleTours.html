@@ -221,15 +221,12 @@
             </div>
             </div>
             </div>
-          </div>
-          <p>Do you want this tour just for your group? We could customise it as well! Click <a class="read-more-show hide" href="#">here</a> <span class="read-more-content">
-            <div class="form-wrapper">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                
-                
+            <p>Do you want this tour just for your group? We could customise it as well! Click <a href="#form_display" class="show_hide">here</a>
+              <div id="form_display" class="slidingDiv">
+                <div class="form-wrapper">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
                 <form action="assets/php/contact.php" method="post" name="contactform" id="contactform" class="animated out" data-animation="fadeInUp" data-delay="0">
-
                   <fieldset>
                     <div class="form-group">
                       <input class="form-control br-b" type="text" name="name" id="name" placeholder="Name">
@@ -243,8 +240,6 @@
                       <textarea class="form-control br-b" name="message" id="message" placeholder="Message..."></textarea>
                     </div>
                   </fieldset>
-                  
-                  
                   <div class="form-group">
                     <input type="submit" name="submit" value="Send message" id="submit" class="btn btn-sm btn-dark">
                   </div>
@@ -256,8 +251,62 @@
               </div> 
             </div>
           </div>
+          <!-- <a href="#form_display" class="show_hide">hide</a> -->
+          </div>
           </span>
           </p>
+          <div class="row">
+            <div class="col-sm-8 features-app-content-right animated out" data-animation="fadeInLeft" data-delay="0">
+              <div class="section_header">
+                <h3>See More Tours</h3> 
+              </div> <!-- End section_header -->
+              <div class="col-md-12">
+              <div id="type-masory" class="home-projects row">
+
+              <div class="project masonry-item col-md-4 col-sm-4 col-xs-12">
+                  <div class="project-item animated out" data-animation="fadeInUp" data-delay="0">
+                    <a href="#video-project.html">
+                      <div class="Image_title">
+                        <h2><b>Cycle Tours</b></h2>
+                      </div>
+                      <img src="assets/images/portfolio/1.jpg" alt="">
+                    </a>
+                  </div><!-- End project-item -->
+                </div> <!-- End col-1-of-3 -->
+
+                <!-- Project -->
+                <div class="project masonry-item col-md-4 col-sm-4 col-xs-12">
+                  <div class="project-item animated out" data-animation="fadeInUp" data-delay="0">
+                    <a href="#slider-project.html">
+                      <div class="Image_title">
+                        <h2><b>Walking Tour</b></h2>
+                      </div>
+                      <img src="assets/images/portfolio/3.jpg" alt="">
+                    </a>
+                  </div><!-- End project-item -->
+                </div> <!-- End col-1-of-3 -->
+
+                <div class="project masonry-item col-md-4 col-sm-4 col-xs-12">
+                  <div class="project-item animated out" data-animation="fadeInUp" data-delay="0">
+                    <a href="#video-project.html">
+                      <div class="Image_title">
+                        <h2><b>Food<br />Tour</b></h2>
+                      </div>
+                      <img src="assets/images/portfolio/7.jpg" alt="">
+                    </a>
+                  </div><!-- End project-item -->
+                </div> <!-- End col-1-of-3 -->
+                
+
+              <!-- <div class="view-more animated out" data-animation="fadeInUp" data-delay="0">
+                <a href="portfolio.html" class="btn btn-lg btn-primary">View More</a>
+              </div> -->
+
+            </div> <!-- End col-md-12 -->
+          </div> <!-- End row -->
+            </div>
+          </div>
+          
         </div> <!-- End container -->
       </div> <!-- End feature-section -->
     </section>
@@ -417,23 +466,18 @@
   <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=194&amp;locationId=2422842&amp;color=green&amp;size=rect&amp;lang=en_IN&amp;display_version=2"></script>
   <script src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=319&amp;locationId=2422842&amp;lang=en_IN&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2"></script>
   <script type="text/javascript">
-  $('.read-more-content').addClass('hide')
-$('.read-more-show, .read-more-hide').removeClass('hide')
 
-// Set up the toggle effect:
-$('.read-more-show').on('click', function(e) {
-  $(this).next('.read-more-content').removeClass('hide');
-  $(this).addClass('hide');
-  e.preventDefault();
+$(document).ready(function(){
+
+$(".slidingDiv").hide();
+$(".show_hide").show();
+
+$('.show_hide').click(function(){
+$(".slidingDiv").slideToggle();
 });
 
-// Changes contributed by @diego-rzg
-$('.read-more-hide').on('click', function(e) {
-  var p = $(this).parent('.read-more-content');
-  p.addClass('hide');
-  p.prev('.read-more-show').removeClass('hide'); // Hide only the preceding "Read More"
-  e.preventDefault();
 });
+
 </script>
 </body>
 </html>
