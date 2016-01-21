@@ -10,8 +10,13 @@ function isEmail($email) {
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $name     = $_POST['name'];
-$email    = $_POST['email'];
+$email = $_POST['email'];
+$date = $_POST['datepicker'];
+$pplcount = $_POST['pplcount'];
+$number = $_POST['number'];
 $message = $_POST['message'];
+
+
 
 if(trim($name) == '') {
 	echo '<div class="notification error clearfix"><p><strong>Attention!</strong> You must enter your name.</p></div>';
@@ -38,7 +43,7 @@ if(get_magic_quotes_gpc()) {
 // Enter the email address that you want to emails to be sent to.
 // Example $address = "joe.doe@yourdomain.com";
 
-$address = "joe.doe@yourdomain.com";
+$address = "ananthj87@gmail.com";
 
 
 // Configuration option.

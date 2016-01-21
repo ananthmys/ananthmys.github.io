@@ -448,7 +448,7 @@ p {
   content: '';
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -470,7 +470,7 @@ p {
   content: '';
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -1758,6 +1758,26 @@ ul.details-list li:last-child {
   background:url('../images/hero-bg/cycle.jpg');
   background-size: cover;
   background-position: center center;
+}
+.Royalwalk {
+  background:url('../images/hero-bg/royalwalk.jpg');
+  background-size: cover;
+  background-position: bottom center;
+}
+.Food {
+  background:url('../images/hero-bg/food.jpg');
+  background-size: cover;
+  background-position: bottom center;
+}
+.Jeep {
+  background:url('../images/hero-bg/jeep.jpg');
+  background-size: cover;
+  background-position: bottom center;
+}
+.Culinary {
+  background:url('../images/hero-bg/culinary.jpg');
+  background-size: cover;
+  background-position: bottom center;
 }
 
 /*--------------------
@@ -3301,5 +3321,5 @@ border-bottom:5px solid transparent;
 display:none;
 }
 .owl-item {
-  width:180px !important;
+  width:210px !important;
 }

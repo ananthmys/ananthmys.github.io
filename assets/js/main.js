@@ -187,10 +187,15 @@ $(document).ready(function($) {
         $('#submit')
             .after('<img src="assets/images/ajax-loader.GIF" class="contactloader" />')
             .attr('disabled','disabled');
-
+        // $('#submit').after(function (){
+        //     $(".slidingDiv").slideToggle();
+        // });
         $.post(action, {
             name: $('#name').val(),
             email: $('#email').val(),
+            datepicker: $('#datepicker').val(),
+            pplcount: $('#pplcount').val(),
+            number: $('#number').val(),
             message: $('#message').val()
         },
             function(data){
@@ -201,6 +206,9 @@ $(document).ready(function($) {
                 if(data.match('success') !== null) {
                     $('#name').val('');
                     $('#email').val('');
+                    $('#datepicker').val('');
+                    $('#pplcount').val('');
+                    $('#number').val('');
                     $('#message').val('');
                 }
             }
