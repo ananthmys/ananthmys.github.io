@@ -1349,7 +1349,7 @@ ul.price-table li .btn {
 }
 
 #portfolio-section {
-  padding: 80px 0;
+  padding: 10px 0;
 }
 
 ul.filter-list {
@@ -1776,6 +1776,16 @@ ul.details-list li:last-child {
 }
 .Culinary {
   background:url('../images/hero-bg/culinary.jpg');
+  background-size: cover;
+  background-position: bottom center;
+}
+.Bespoke {
+  background:url('../images/hero-bg/bespoke.jpg');
+  background-size: cover;
+  background-position: bottom center;
+}
+.Corporate {
+  background:url('../images/hero-bg/corporate.jpg');
   background-size: cover;
   background-position: bottom center;
 }
@@ -3292,7 +3302,7 @@ p.copyright {
 }
 .TourDesc {
   padding:1em 0em;
-}  
+}
 .TourDetails_right {
   display: inline-block;
   width:75%;
