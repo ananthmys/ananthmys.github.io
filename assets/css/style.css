@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  color: #737272;
+  color: #3f3f3f;
   line-height: 24px;
   font-size: 13px;
   letter-spacing: 1.2px;
@@ -64,8 +64,11 @@ img {
   color: #494949;
 }
 .navbar-brand .logo {
-  margin-top:-8px !important;
-  height:auto !important;
+  /*margin-top:-8px !important;*/
+  /*height:auto !important;*/
+}
+.navbar-brand img {
+  margin-top:-13px;
 }
 /***********************************************************************************************/
 /* =Typography */
@@ -539,6 +542,9 @@ p {
 .hero-content h1, p.hero {
   color: #fff;
 }
+.hero-content h2, p.hero {
+  color: #fff;
+}
 
 .hero-content h1 {
   font-family: 'Open Sans', sans-serif;
@@ -546,6 +552,20 @@ p {
   font-weight: 500;
   letter-spacing: 8px;
   text-transform: uppercase;
+}
+.hero-content .bom h2 {
+  font-family: 'Open Sans', sans-serif;
+  /*font-size: 33px;
+  font-weight: 500;
+  letter-spacing: 2px;*/
+  text-transform: uppercase;
+  width:100%;
+}
+.hero-content .bom h2 span {
+  font-size:43px;
+}
+.hero-content a {
+  color:#fff;
 }
 
 .div-line {
@@ -797,7 +817,7 @@ ul.choose-list li, ul.soon-list li {
 
 .overlay .overlay-inner {
   position: absolute;
-  top: 40%;
+  top: 5%;
   width: 100%;
   text-align: center;
   bottom: 0;
@@ -830,7 +850,8 @@ ul.choose-list li, ul.soon-list li {
       -ms-transform: translateY(30px);
        -o-transform: translateY(30px);
           transform: translateY(30px);
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
+  font-size:14px;
 }
 
 a:hover .overlay .overlay-inner h3 {
@@ -1789,6 +1810,16 @@ ul.details-list li:last-child {
   background-size: cover;
   background-position: bottom center;
 }
+.About {
+  background:url('../images/hero-bg/about.jpg');
+  background-size: cover;
+  background-position: bottom center;
+}
+.Student {
+  background:url('../images/hero-bg/student.jpg');
+  background-size: cover;
+  background-position: center center;
+}
 
 /*--------------------
   Features Section
@@ -1982,11 +2013,7 @@ ul.features-list li {
 }
 #sticky,
 #sticky-phantom {
-    /*background: transparent;
-    color: #ffffff;
-    font-size: 30px;
-    text-align: center;*/
-    /*width: 100vw;*/
+  margin-left:4em;
 }
 
 #sticky-phantom {
@@ -2935,6 +2962,19 @@ ul.download li a img {
   background: #2b2d2e;
   border-top: 1px solid #EEEEEE;
 }
+.TA_certificateOfExcellence {
+  display: block;
+  width:150px;
+  width:150px;
+  margin:auto auto;
+}
+.footer-social-links {
+  margin-left:2em;
+}
+.Footermenu h4 {
+  color:#fff;
+  font-size: 20px;
+}
 .Footermenu ul {
   list-style: none;
   text-align: left;
@@ -2946,6 +2986,11 @@ ul.download li a img {
   color:#FFF;
   font-size: 16px;
 }
+.Footermenu p {
+  color:#fff;
+  font-size: 18px;
+}
+
 #contact ul {
   list-style: none;
   text-align: center;
@@ -3009,6 +3054,7 @@ ul.footer-social-links li a:hover:after {
 
 p.copyright {
   /*padding-top: 10px;*/
+  color:#fff;
 }
 
 /***********************************************************************************************/
@@ -3268,6 +3314,10 @@ p.copyright {
     /*top: -10vh;*/
     z-index:2000;
 }
+#fixed-button a {
+  color:#fff !important;
+  display: block !important;
+}
 .TA_selfserveprop {
   position: relative;
   width:400px;
@@ -3275,9 +3325,10 @@ p.copyright {
 #CDSWIDSSP {
   width:80% !important;
 }
+
 #fixed-button {
-   border: 1px solid #2b2d2e;
-   background: #753c26;
+   border: 1px solid #ffb30f;
+   background: #ffb30f;
    /*background: -webkit-gradient(linear, left top, left bottom, from(#2b2d2e), to(#2b2d2e));
    background: -webkit-linear-gradient(top, #2b2d2e, #2b2d2e);
    background: -moz-linear-gradient(top, #2b2d2e, #2b2d2e);
@@ -3292,8 +3343,8 @@ p.copyright {
    vertical-align: middle;
    }
 #fixed-button:hover {
-   border-top-color: #2b2d2e;
-   background: #2b2d2e;
+   border-top-color: #ffb30f;
+   background: #ffb30f;
    color: #ffffff;
    }
 #fixed-button:active {
@@ -3302,6 +3353,15 @@ p.copyright {
 }
 .TourDesc {
   padding:1em 0em;
+}
+.TourDesc h4 {
+  font-style: italic;
+  text-transform: none;
+
+}
+.TourDesc h3 {
+  text-transform: none;
+
 }
 .TourDetails_right {
   display: inline-block;
@@ -3332,4 +3392,12 @@ display:none;
 }
 .owl-item {
   width:210px !important;
+  height:150px !important;
+}
+.customizeButton {
+  text-transform: none;
+  font-style: italic;
+}
+.customizeButton a {
+  color:#ffb30f;
 }
