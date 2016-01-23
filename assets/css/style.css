@@ -164,7 +164,9 @@ p {
 .pad-sec {
   padding: 50px 0!important;
 }
-
+.pad-about {
+  padding:15px 0 15px 0;
+}
 .title-section {
   padding-left: 30px;
   padding-right: 30px;
@@ -1032,12 +1034,12 @@ span.percentfactor {
   position: absolute;
   width: 100%;
   top: 20%;
-  padding: 0 20px;
+  padding: 0px 10px;
 }
 
 .member-team .magnifier .magnifier-inner p {
   font-size: 12px;
-  color: #999;
+  color: #1f2021;
   line-height: 24px;
   margin-bottom: 40px;
 }
@@ -1813,7 +1815,7 @@ ul.details-list li:last-child {
 .About {
   background:url('../images/hero-bg/about.jpg');
   background-size: cover;
-  background-position: bottom center;
+  background-position: center center;
 }
 .Student {
   background:url('../images/hero-bg/student.jpg');
