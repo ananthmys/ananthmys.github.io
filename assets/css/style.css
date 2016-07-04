@@ -2015,7 +2015,7 @@ ul.features-list li {
 }
 #sticky,
 #sticky-phantom {
-  margin-left:4em;
+  /*margin-left:4em;*/
 }
 
 #sticky-phantom {
